@@ -9,7 +9,7 @@ import { AlertController } from '@ionic/angular';
 })
 export class PatientFormPage {
 
-  @ViewChild('selectComponent') selectComponent: IonicSelectableComponent;
+  @ViewChild('selectComponent',{static:false}) selectComponent: IonicSelectableComponent;
 
   users = [
     {
